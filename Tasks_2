@@ -1,6 +1,3 @@
-import time
-print("Web sitesi Para istatistik progarmı")
-
 account = input("Merhaba lütfen web sitnizin adını giriniz : ")
 user = int(input("Sitenizdeki kullanıcı sayısı : "))
 adverstisement = int(input("Rekalamlara tıklama başına kazanılan para : "))
@@ -11,8 +8,17 @@ Total_Money = (user * adverstisement)*Day_Click*Website_Click
 
 Total_user_money = Total_Money//user
 
+kontrol = account.endswith(".com")
+
+if kontrol == True:
+    pass
+else:
+    print("lütfen düzgün girin web site isminizi")
+
 print("lütfen hesaplanması için 'H' ye basın")
+
 a = input(" : ")
+
 if a == "H" or "h":
     time.sleep(1.5)
     print("Your Website : ",account)
