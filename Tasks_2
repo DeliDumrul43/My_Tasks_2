@@ -1,0 +1,23 @@
+import time
+print("Web sitesi Para istatistik progarmı")
+
+account = input("Merhaba lütfen web sitnizin adını giriniz : ")
+user = int(input("Sitenizdeki kullanıcı sayısı : "))
+adverstisement = int(input("Rekalamlara tıklama başına kazanılan para : "))
+Day_Click = int(input("Günlük reklamlara tıklanma sayısı :"))
+Website_Click = int(input("Siteye tıklanma başına kazanılan para : "))
+
+Total_Money = (user * adverstisement)*Day_Click*Website_Click
+
+Total_user_money = Total_Money//user
+
+print("lütfen hesaplanması için 'H' ye basın")
+a = input(" : ")
+if a == "H" or "h":
+    time.sleep(1.5)
+    print("Your Website : ",account)
+    time.sleep(1)
+    print("Total money in a day : $",Total_Money)
+    time.sleep(1)
+    print("Money for each user : $",Total_user_money)
+
